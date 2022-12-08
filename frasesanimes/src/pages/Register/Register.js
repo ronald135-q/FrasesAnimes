@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { DivComponent } from "./styled";
-import { TextField, Button } from "@mui/material";
+import { Button } from "@mui/material";
 import firebase from "../../services/firebaseConnection";
+import TextField from "@mui/material/TextField";
 
 export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  function onChangeEmail(event) {
+    setEmail(event.target.value);
+  }
 
   function handleLogin() {
     const user = firebase
@@ -26,8 +31,8 @@ export default function Register() {
       <TextField
         placeholder="Seu email"
         value={email}
-        name={"email"}
-        onChange={(text) => setEmail(text)}
+        name="email"
+        onChange={onChangeEmail}
       />
 
       <TextField

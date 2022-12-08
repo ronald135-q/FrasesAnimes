@@ -9,7 +9,7 @@ const DivCategorias = styled.div`
   align-items: center;
   color: white;
   background-image: url(${hxh});
-  height: 90vh;
+  height: 100vh;
 `;
 
 export const HeaderContainer = styled.header`

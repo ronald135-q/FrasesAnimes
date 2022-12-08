@@ -1,6 +1,7 @@
 import { Button, ButtonGroup } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router";
+import Header from "../../components/Header/Header";
 import DivCategorias, {
   DivButton,
   HeaderButton,
@@ -17,9 +18,13 @@ const Categorias = () => {
   function irParaOnePiece() {
     navigate("/OnePiece");
   }
+
+  function irParaHxH() {
+    navigate("/Hunter");
+  }
   return (
     <>
-      <HeaderContainer>
+      {/* <HeaderContainer>
         <HeaderButton>
           <Button
             onClick={homePage}
@@ -30,14 +35,17 @@ const Categorias = () => {
           </Button>
         </HeaderButton>
 
-        <h1>Frases de animes</h1>
+        <h1>Frases de animes</h1> */}
 
-        <HeaderButton>
+      {/* <HeaderButton>
           <Button variant="text" sx={{ fontSize: 20, borderRadius: 30 }}>
             ADMIN
           </Button>
         </HeaderButton>
-      </HeaderContainer>
+      </HeaderContainer> */}
+      <Header buttonName={"Voltar"} temAdmin={true}>
+        <h1 style={{ alignItems: "center" }}>Frases de Animes</h1>
+      </Header>
       <DivCategorias>
         <DivButton>
           <Button
@@ -49,7 +57,11 @@ const Categorias = () => {
           </Button>
         </DivButton>
         <DivButton>
-          <Button variant="text" sx={{ fontSize: 20, borderRadius: 30 }}>
+          <Button
+            onClick={irParaHxH}
+            variant="text"
+            sx={{ fontSize: 20, borderRadius: 30 }}
+          >
             Hunter x Hunter
           </Button>
         </DivButton>
@@ -59,7 +71,7 @@ const Categorias = () => {
           </Button>
         </DivButton>
         <DivButton>
-          <Button variant="text" sx={{ fontSize: 20, borderRadius: 30 }}>
+          <Button variant="text" sx={{ fontSize: 15, borderRadius: 30 }}>
             Fullmetal Alchemist
           </Button>
         </DivButton>
