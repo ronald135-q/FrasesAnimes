@@ -1,4 +1,4 @@
-# 🍟 Projeto Frases de Animes
+# Projeto Frases de Animes
 
 Site desenvolvido para ser uma plataforma que mostra diversas frases de animes e mangás, tendo até o momento quatro possibilidades para o usuário de títulos para ver.
 
@@ -21,7 +21,7 @@ Nas páginas das frases correspondents se tem uma quantidade expressiva de frase
 Por último se tem um botão também para quem for admin poder acessar algumas funcionalidades exclusivas.
 
 ## 📷 Imagens
-![one1](https://user-images.githubusercontent.com/94769962/209557492-68ec6c62-9b2b-4dcf-ae9d-2fa2b29604ba.PNG)
+![one4](https://user-images.githubusercontent.com/94769962/209558016-f4af762f-623f-40a6-9c26-88872cd95d12.PNG)
 ![one2](https://user-images.githubusercontent.com/94769962/209557548-78e62bb3-419d-4976-b916-040164b5ee7d.PNG)
 ![one3](https://user-images.githubusercontent.com/94769962/209557576-5c3ad8f9-9c41-4100-b0e0-5d40ef2fbe3b.PNG)
 
