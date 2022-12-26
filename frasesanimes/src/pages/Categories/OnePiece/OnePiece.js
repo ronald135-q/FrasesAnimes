@@ -15,9 +15,16 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import BasicCard from "../../../components/Card/Card";
+import { useNavigate } from "react-router";
 
 const OnePiece = () => {
   const [list, setList] = useState([]);
+
+  const navigate = useNavigate();
+
+  function goHome() {
+    navigate("/Categorias");
+  }
 
   useEffect(() => {
     async function dados() {
@@ -59,7 +66,7 @@ const OnePiece = () => {
   });
   return (
     <>
-      <Header temAdmin={true} buttonName={"Voltar"}>
+      <Header temAdmin={true} buttonName={"Voltar"} goLink={goHome}>
         <h1>Frases de animes</h1>
       </Header>
       {listaCompleta}

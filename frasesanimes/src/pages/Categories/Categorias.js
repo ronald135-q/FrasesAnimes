@@ -22,28 +22,13 @@ const Categorias = () => {
   function irParaHxH() {
     navigate("/Hunter");
   }
+
+  function irParaFruits() {
+    navigate("/Fruits");
+  }
   return (
     <>
-      {/* <HeaderContainer>
-        <HeaderButton>
-          <Button
-            onClick={homePage}
-            variant="text"
-            sx={{ fontSize: 20, borderRadius: 30 }}
-          >
-            Voltar
-          </Button>
-        </HeaderButton>
-
-        <h1>Frases de animes</h1> */}
-
-      {/* <HeaderButton>
-          <Button variant="text" sx={{ fontSize: 20, borderRadius: 30 }}>
-            ADMIN
-          </Button>
-        </HeaderButton>
-      </HeaderContainer> */}
-      <Header buttonName={"Voltar"} temAdmin={true}>
+      <Header buttonName={"Voltar"} temAdmin={true} goLink={homePage}>
         <h1 style={{ alignItems: "center" }}>Frases de Animes</h1>
       </Header>
       <DivCategorias>
@@ -66,8 +51,12 @@ const Categorias = () => {
           </Button>
         </DivButton>
         <DivButton>
-          <Button variant="text" sx={{ fontSize: 20, borderRadius: 30 }}>
-            Yugioh
+          <Button
+            onClick={irParaFruits}
+            variant="text"
+            sx={{ fontSize: 20, borderRadius: 30 }}
+          >
+            Fruits Basket
           </Button>
         </DivButton>
         <DivButton>

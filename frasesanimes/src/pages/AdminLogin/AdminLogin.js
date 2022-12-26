@@ -10,7 +10,7 @@ import firebase from "../../services/firebaseConnection";
 import Header from "../../components/Header/Header";
 import { useNavigate } from "react-router";
 
-export default function Login() {
+export default function AdminLogin() {
   const navigate = useNavigate();
   let [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -38,9 +38,10 @@ export default function Login() {
   }
   return (
     <>
-      <HeaderContainer>
+      <Header buttonName={"Categorias"} goLink={goCategorias}>
         <h1>Frases de Animes</h1>
-      </HeaderContainer>
+      </Header>
+
       <DivCategorias>
         <TextField
           style={{

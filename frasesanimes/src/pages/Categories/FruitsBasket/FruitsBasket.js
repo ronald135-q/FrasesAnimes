@@ -1,12 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import firebase from "../../services/firebaseConnection";
-import BasicCard from "../../components/Card/Card";
+import firebase from "../../../services/firebaseConnection";
+import BasicCard from "../../../components/Card/Card";
 import { ContainerDiv } from "./styled";
-import Header from "../../components/Header/Header";
+import Header from "../../../components/Header/Header";
 import { useNavigate } from "react-router";
 
-export default function HunterxHunter() {
+export default function FruitsBasket() {
   const navigate = useNavigate();
   const [list, setList] = useState([]);
 
