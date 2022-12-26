@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import onepiece from "../../../assets/One-Piece.jpg";
+import hxhx from "../../assets/hxhx.jpg";
 
 export const ContainerDiv = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ export const ContainerDiv = styled.div`
   border-radius: 20px;
   justify-content: center;
   align-items: center;
-  background-image: url(${onepiece});
+  background-image: url(${hxhx});
   height: 100vh;
 `;
 

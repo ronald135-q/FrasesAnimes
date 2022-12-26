@@ -1,6 +1,7 @@
 import { Button, ButtonGroup } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router";
+import Header from "../../components/Header/Header";
 import DivCategorias, {
   DivButton,
   HeaderButton,
@@ -17,27 +18,19 @@ const Categorias = () => {
   function irParaOnePiece() {
     navigate("/OnePiece");
   }
+
+  function irParaHxH() {
+    navigate("/Hunter");
+  }
+
+  function irParaFruits() {
+    navigate("/Fruits");
+  }
   return (
     <>
-      <HeaderContainer>
-        <HeaderButton>
-          <Button
-            onClick={homePage}
-            variant="text"
-            sx={{ fontSize: 20, borderRadius: 30 }}
-          >
-            Voltar
-          </Button>
-        </HeaderButton>
-
-        <h1>Frases de animes</h1>
-
-        <HeaderButton>
-          <Button variant="text" sx={{ fontSize: 20, borderRadius: 30 }}>
-            ADMIN
-          </Button>
-        </HeaderButton>
-      </HeaderContainer>
+      <Header buttonName={"Voltar"} temAdmin={true} goLink={homePage}>
+        <h1 style={{ alignItems: "center" }}>Frases de Animes</h1>
+      </Header>
       <DivCategorias>
         <DivButton>
           <Button
@@ -49,17 +42,25 @@ const Categorias = () => {
           </Button>
         </DivButton>
         <DivButton>
-          <Button variant="text" sx={{ fontSize: 20, borderRadius: 30 }}>
+          <Button
+            onClick={irParaHxH}
+            variant="text"
+            sx={{ fontSize: 20, borderRadius: 30 }}
+          >
             Hunter x Hunter
           </Button>
         </DivButton>
         <DivButton>
-          <Button variant="text" sx={{ fontSize: 20, borderRadius: 30 }}>
-            Yugioh
+          <Button
+            onClick={irParaFruits}
+            variant="text"
+            sx={{ fontSize: 20, borderRadius: 30 }}
+          >
+            Fruits Basket
           </Button>
         </DivButton>
         <DivButton>
-          <Button variant="text" sx={{ fontSize: 20, borderRadius: 30 }}>
+          <Button variant="text" sx={{ fontSize: 15, borderRadius: 30 }}>
             Fullmetal Alchemist
           </Button>
         </DivButton>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import op from "../../assets/One-Piece.jpg";
-import hxh from "../../assets/hxhx.jpg";
+import atk from "../../assets/atk.jpg";
 
 export const HeaderContainer = styled.header`
   height: 8vh;
@@ -27,7 +27,6 @@ export const DivComponent = styled.div`
   color: white;
   position: relative;
   padding: 30px;
-  background-image: url(${op});
 `;
 
 export const DivCategorias = styled.div`
@@ -36,7 +35,7 @@ export const DivCategorias = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
-  background-image: url(${op});
+  background-image: url(${atk});
   background-position: center;
   height: 100vh;
 `;

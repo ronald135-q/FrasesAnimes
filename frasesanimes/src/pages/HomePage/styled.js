@@ -3,7 +3,7 @@ import xholic from "../../assets/xxxholic.png";
 import onepiece from "../../assets/One-Piece.jpg";
 
 const DivContainer = styled.div`
-  display: flex;
+  /* display: flex;
   justify-content: center;
   margin: 0;
   height: 90vh;
