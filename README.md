@@ -3,7 +3,7 @@
 Site desenvolvido para ser uma plataforma que mostra diversas frases de animes e mangás, tendo até o momento quatro possibilidades para o usuário de títulos para ver.
 
 ## 📱 Link Surge
-
+alleged-coal.surge.sh
 
 ## 👩‍💻 Desenvolvedor
 - Ronald Santiago
